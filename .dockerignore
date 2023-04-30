@@ -1,0 +1,10 @@
+**/.git
+**/bootstrap/cache/*.php
+**/vendor
+**/*.log
+**/*.sqlite
+**/storage/framework/cache/data
+**/storage/framework/sessions
+**/storage/framework/testing
+**/storage/framework/views
+/nginx
