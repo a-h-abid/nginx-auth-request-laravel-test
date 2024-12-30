@@ -9,7 +9,7 @@ services:
     tty: true
     restart: 'no'
     ports:
-      - 80:80
+      - ${NGINX_PORT:-8080}:80
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
