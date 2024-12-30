@@ -1,0 +1,15 @@
+meta {
+  name: API Service Status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/api/service/status
+  body: none
+  auth: none
+}
+
+headers {
+  X-Token: {{x_token}}
+}

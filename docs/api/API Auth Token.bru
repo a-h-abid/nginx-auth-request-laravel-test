@@ -1,0 +1,20 @@
+meta {
+  name: API Auth Token
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/api/auth/login
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  username: {{process.env.form_username}}
+  password: {{process.env.form_password}}
+}
+
+vars:post-response {
+  x_token: res.body.token
+}

@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Nginx Auth Request Tests",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
