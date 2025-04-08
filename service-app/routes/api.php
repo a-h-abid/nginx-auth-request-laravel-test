@@ -29,7 +29,7 @@ Route::get('service/status', function (Request $request) {
 
     if (!$authenticated || $authenticated == '0') {
         return response()->json([
-            'message' => 'Unauthenticated S',
+            'message' => 'Unauthenticated',
         ], 401);
     }
 
